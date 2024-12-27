@@ -15,11 +15,6 @@ ol[role="list"], ul[role="list"] {
   padding-inline: 0;
 }
 
-/* h1, h2, h3, h4, h5 {
-  /* font-size: inherit; */
-  /* font-weight: inherit; */
-} */
-
 img {
   display: block;
   max-inline-size: 100%;
@@ -89,13 +84,15 @@ svg{
 
 .rightSide{
     display: grid;
-    grid-template-rows: min(20%,200px) 1fr;
+    grid-template-rows: 200px 1fr;
 }
 
 .topPart{
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding-left: 40px;
+    padding-right: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 img{
@@ -159,7 +156,7 @@ input:focus {
 
 .rightSideBottomPart{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
 }
 
 .helloMessage{
@@ -173,4 +170,131 @@ input:focus {
   align-self: center;
   font-weight: bolder;
 
+}
+
+.buttons{
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 35px;
+  gap: 10px;
+  /* justify-content: start; */
+  align-content: center;
+}
+button{
+  max-width: 150px;
+  min-width: 100px;
+  height: 40px;
+  background-color: rgb(230, 236, 234);
+  border: 2px solid #d3d3d3;
+  border-radius: 10px;
+  transition: background-color 0.5s ease; /* Smooth transition */
+  font-size: large;
+}
+
+button:hover {
+  background-color: #c0c0c0; /* Slightly darker shade */
+}
+
+.bottomPart{
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 35px;
+}
+
+.title1{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.middlePart{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 15px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.card{
+  background-color: beige;
+  padding: 20px;
+  padding-left: 30px;
+  border-left: 7px solid darkgray;
+  border-radius: 7px;
+  /* min-height: 300px; */
+
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.shareIcons{
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.rightSide2{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+}
+
+.announcementCard{
+  background-color: beige;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 7px;
+
+  display: grid;
+  gap: 5px;
+
+}
+
+.maintenanceTitle{
+  font-size: 20px;
+}
+
+.bottomPartRightSide2{
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.trending{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.announcementCard2{
+  background-color: beige;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 7px;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.user{
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+
+.user img {
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
